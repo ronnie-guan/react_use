@@ -1,5 +1,7 @@
 "use client";
 import vscodepng from "../../../public/savecode.png";
+import cc from "../../../public/储藏.png";
+import ccyy from "../../../public/储藏应用.png";
 import Image from "next/image";
 export default function WindowSizePage() {
   return (
@@ -28,7 +30,9 @@ export default function WindowSizePage() {
       </div>
       <div className="p-8 rounded-2xl bg-white dark:bg-zinc-800 shadow-sm border border-zinc-200 dark:border-zinc-700">
         <p>存储：可临时保存代码</p>
-        <Image src={vscodepng} alt="VSCode存储代码操作截图" className="mt-2" />
+        <Image src={vscodepng} alt="" className="mt-2" />
+        <Image src={cc} alt="" className="mt-2" />
+        <Image src={ccyy} alt="" className="mt-2" />
       </div>
     </div>
   );

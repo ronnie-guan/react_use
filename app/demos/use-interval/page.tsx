@@ -1,7 +1,10 @@
 "use client";
 
 import { useInterval, useToggle } from "@reactuses/core";
-import { useState } from "react";
+import {
+  useState,
+  //  useEffect
+} from "react";
 
 export default function IntervalPage() {
   return (
@@ -41,9 +44,18 @@ function IntervalDemo() {
   // useInterval: 类 setInteval Hook
   // param1: 回调函数
   // param2: 延迟时间 (ms)。如果为 null，则暂停。
+
+  // 常用写法
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     console.log("定时器运行中...");
+  //   }, 1000);
+  // }, []);
+
   useInterval(
     () => {
       setCount((count) => count + 1);
+      console.log("count", count);
     },
     isRunning ? delay : null,
   );
