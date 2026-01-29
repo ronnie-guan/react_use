@@ -38,10 +38,8 @@ toggle(false);`}
 }
 
 function ToggleDemo() {
-  // useToggle: 第一个参数是状态值，第二个参数是切换状态的函数
   // 默认值为 false
   const [on, toggle] = useToggle(false);
-  console.log("🚀 ~ ToggleDemo ~ on:", on);
 
   return (
     <div className="flex items-center gap-4">
