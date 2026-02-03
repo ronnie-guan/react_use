@@ -55,20 +55,22 @@ function NetworkDemo() {
 
       <div className="grid grid-cols-2 gap-4 text-sm">
         <div className="p-4 bg-zinc-50 dark:bg-zinc-900 rounded-lg">
-          <div className="text-zinc-500 mb-1">Downlink</div>
+          <div className="text-zinc-500 mb-1">
+            Downlink 有效带宽估计（以兆位每秒为单位）
+          </div>
           <div className="font-mono">{state.downlink} Mb/s</div>
         </div>
         <div className="p-4 bg-zinc-50 dark:bg-zinc-900 rounded-lg">
-          <div className="text-zinc-500 mb-1">Effective Type</div>
+          <div className="text-zinc-500 mb-1">
+            Effective Type（有效类型：“slow-2g”、“2g”、“3g”或“4g”之一）
+          </div>
           <div className="font-mono">{state.effectiveType || "Unknown"}</div>
         </div>
         <div className="p-4 bg-zinc-50 dark:bg-zinc-900 rounded-lg">
-          <div className="text-zinc-500 mb-1">Rtt</div>
+          <div className="text-zinc-500 mb-1">
+            Rtt（连接的估计有效往返时间）
+          </div>
           <div className="font-mono">{state.rtt} ms</div>
-        </div>
-        <div className="p-4 bg-zinc-50 dark:bg-zinc-900 rounded-lg">
-          <div className="text-zinc-500 mb-1">Save Data</div>
-          <div className="font-mono">{state.saveData ? "Yes" : "No"}</div>
         </div>
       </div>
       <p className="text-xs text-zinc-500 italic">

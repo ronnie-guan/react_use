@@ -56,12 +56,6 @@ function ToggleDemo() {
         />
       </div>
       <span className="font-medium">{on ? "开启 (ON)" : "关闭 (OFF)"}</span>
-      <button
-        onClick={() => toggle()}
-        className="px-3 py-1 text-sm bg-zinc-100 dark:bg-zinc-700 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-600 transition"
-      >
-        切换 (Toggle)
-      </button>
     </div>
   );
 }
